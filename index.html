@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Rafi Paringgom Iwari, S.Si. | Portofolio Data Science &amp; EdTech</title>
+  <meta name="description"
+    content="Portofolio resmi A Rafi Paringgom Iwari, S.Si. — Sarjana Sains Data ITERA yang berfokus pada pemodelan statistik, tata kelola data pendidikan, dan solusi berbasis data.">
+  <meta name="author" content="A Rafi Paringgom Iwari">
+  <meta name="theme-color" content="#030712">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="A Rafi Paringgom Iwari | Portofolio">
+  <meta property="og:description" content="Mengubah data menjadi wawasan, teknologi menjadi solusi berdampak.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Ambient Background Glows & Particle Canvas -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Reading Progress Bar -->
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <!-- Floating Glass Navbar -->
+  <header class="navbar-wrapper">
+    <div class="navbar" id="navbar">
+      <a href="#home" class="brand">
+        <span class="brand-badge">RPI</span>
+        <span class="brand-text">Rafi<span>.dev</span></span>
+      </a>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="#home" class="nav-item active">Home</a>
+        <a href="#about" class="nav-item">About</a>
+        <a href="#skills" class="nav-item">Skills</a>
+        <a href="#experience" class="nav-item">Experience</a>
+        <a href="#portfolio" class="nav-item">Portfolio</a>
+        <a href="#contact" class="nav-item">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn-nav">
+          <span>Let's Talk</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </a>
+        <button class="burger-btn" id="burger-btn" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Navigation -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <div class="drawer-header">
+      <span class="brand-text">Navigasi Portofolio</span>
+      <button class="drawer-close" id="drawer-close" aria-label="Tutup Menu">×</button>
+    </div>
+    <div class="drawer-links">
+      <a href="#home" class="drawer-link">Home</a>
+      <a href="#about" class="drawer-link">About Me</a>
+      <a href="#skills" class="drawer-link">Skills &amp; Tech Stack</a>
+      <a href="#experience" class="drawer-link">Experience</a>
+      <a href="#portfolio" class="drawer-link">Portfolio (Projects, Certs, Awards)</a>
+      <a href="#contact" class="drawer-link">Contact</a>
+    </div>
+    <div class="drawer-footer">
+      <a href="mailto:a.rafiparinggomiwari@gmail.com" class="btn-full primary">Hubungi Saya</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="home">
+      <div class="hero-container">
+        <div class="hero-content reveal">
+          <div class="badge-pill">
+            <span class="pulse-dot"></span>
+            <span class="badge-text">WELCOME TO MY PORTOFOLIO</span>
+          </div>
+
+          <h1 class="hero-title">
+            Halo, Saya <br>
+            <span class="gradient-text">A Rafi Paringgom Iwari</span>
+          </h1>
+
+          <div class="typing-container">
+            <span class="typing-prefix">I am a </span>
+            <span class="typed-text" id="typed-text"></span>
+            <span class="cursor">|</span>
+          </div>
+
+          <p class="hero-desc">
+            Sarjana Sains Data lulusan <strong>Institut Teknologi Sumatera (ITERA)</strong>. Berfokus pada pemodelan
+            statistik, ekonometrika deret waktu, rekayasa data spasial, serta tata kelola data sistem pendidikan
+            nasional yang berdampak nyata.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#portfolio" class="btn-primary">
+              <span>Explore My Work</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>Get in Touch</span>
+            </a>
+          </div>
+
+          <!-- Social Media Pills -->
+          <div class="hero-socials">
+            <a href="https://linkedin.com/in/a-rafi-paringgom-iwari-767a16449" target="_blank" rel="noopener"
+              class="social-icon" title="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9h2.78v8.37H6.46v-8.37M7.85 6.6a1.62 1.62 0 1 0 0 3.24 1.62 1.62 0 0 0 0-3.24z" />
+              </svg>
+            </a>
+            <a href="mailto:a.rafiparinggomiwari@gmail.com" class="social-icon" title="Email Direct">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect width="20" height="16" x="2" y="4" rx="2" />
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+              </svg>
+            </a>
+            <a href="https://github.com" target="_blank" rel="noopener" class="social-icon" title="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+              </svg>
+            </a>
+            <div class="social-divider"></div>
+            <span class="location-chip">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              Lampung Selatan, ID
+            </span>
+          </div>
+
+          <!-- Quick Stats Counter -->
+          <div class="hero-stats">
+            <div class="stat-box">
+              <div class="stat-number"><span data-count="3.24" data-dec="2">0</span></div>
+              <div class="stat-label">IPK ITERA</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-number">1<span class="stat-sup">st</span></div>
+              <div class="stat-label">Best Presenter '24</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-number"><span data-count="3" data-suffix="+">0</span></div>
+              <div class="stat-label">Thn Pengalaman</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-number"><span data-count="5" data-suffix="+">0</span></div>
+              <div class="stat-label">Proyek &amp; Riset</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero 3D-Like Glass Avatar Card -->
+        <div class="hero-visual reveal">
+          <div class="glass-avatar-card">
+            <div class="avatar-ring ring-1"></div>
+            <div class="avatar-ring ring-2"></div>
+            <div class="avatar-core photo-mode">
+              <img src="assets/images/profile.jpg" alt="A Rafi Paringgom Iwari, S.Si." class="avatar-photo">
+              <div class="avatar-glass-caption">
+                <div class="caption-name">A Rafi Paringgom Iwari, S.Si.</div>
+                <div class="caption-sub">Sains Data · ITERA</div>
+              </div>
+            </div>
+
+            <!-- Floating Badges -->
+            <div class="floating-chip chip-egarch">
+              <span class="chip-icon">📈</span>
+              <div class="chip-info">
+                <strong>EGARCH Modeler</strong>
+                <small>Financial Volatility</small>
+              </div>
+            </div>
+
+            <div class="floating-chip chip-dapodik">
+              <span class="chip-icon">🏫</span>
+              <div class="chip-info">
+                <strong>Dapodik &amp; ARKAS</strong>
+                <small>Data Governance</small>
+              </div>
+            </div>
+
+            <div class="floating-chip chip-saintek">
+              <span class="chip-icon">🏆</span>
+              <div class="chip-info">
+                <strong>Juara 1 Presentasi</strong>
+                <small>SAINTEK 2024</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section" id="about">
+      <div class="section-header reveal">
+        <div class="section-tag">ABOUT ME</div>
+        <h2 class="section-title">Menyatukan Integritas Data &amp; Solusi Nyata</h2>
+        <p class="section-subtitle">Membangun arsitektur informasi terpercaya melalui komputasi statistik, analisis
+          spasial, dan digitalisasi institusional.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card glass-panel reveal">
+          <div class="card-glow"></div>
+          <h3 class="about-heading">
+            <span class="gradient-text">Sarjana Sains Data</span> dengan Keahlian Ekonometrika &amp; Tata Kelola
+            Institusi
+          </h3>
+          <p class="about-text">
+            Sebagai Sarjana Sains Data dari <strong>Institut Teknologi Sumatera (ITERA)</strong>, saya memadukan
+            kekuatan teori probabilitas dan statistika lanjutan dengan praktik rekayasa data modern. Mulai dari
+            pemodelan volatilitas ekonometrika keuangan dengan model EGARCH hingga audit jutaan baris survei demografi.
+          </p>
+          <p class="about-text">
+            Selama lebih dari 3 tahun, saya berkontribusi di <strong>BPS Kabupaten Lampung Timur</strong>, memimpin
+            asistensi laboratorium analisis data spasial &amp; big data di ITERA, dan saat ini bertanggung jawab
+            mengelola ekosistem data pendidikan nasional melalui <strong>Dapodik &amp; ARKAS di SMP IT Zafira
+              Qudsia</strong>.
+          </p>
+
+          <div class="quote-card">
+            <svg class="quote-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+            </svg>
+            <p>“Data berkualitas bukan sekadar dihimpun, melainkan diverifikasi integritasnya, dipetakan polanya, dan
+              ditransformasikan menjadi panduan keputusan yang presisi.”</p>
+          </div>
+
+          <div class="personal-info-grid">
+            <div class="info-item">
+              <span class="info-label">Gelar:</span>
+              <span class="info-value">S.Si. (Sains Data)</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Almamater:</span>
+              <span class="info-value">Institut Teknologi Sumatera</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Lokasi:</span>
+              <span class="info-value">Lampung Selatan, Indonesia</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Status:</span>
+              <span class="info-value text-emerald">● Terbuka Kolaborasi &amp; Peluang</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 Pillars Cards -->
+        <div class="pillars-grid">
+          <div class="pillar-card glass-panel reveal">
+            <div class="pillar-icon-box">📊</div>
+            <h4>Pemodelan Statistik &amp; Deret Waktu</h4>
+            <p>Ekonometrika deret waktu, EGARCH, GARCH, uji diagnostik residual, regresi prediktif, dan inferensi
+              statistika nonparametrik.</p>
+          </div>
+
+          <div class="pillar-card glass-panel reveal">
+            <div class="pillar-icon-box">🏛️</div>
+            <h4>Tata Kelola Sistem Data Sekolah</h4>
+            <p>Pengelolaan basis data Dapodik Kemendikdasmen, sistem penganggaran ARKAS, audit data sarpras, dan
+              pemenuhan SPMI.</p>
+          </div>
+
+          <div class="pillar-card glass-panel reveal">
+            <div class="pillar-icon-box">🗺️</div>
+            <h4>Analisis Spasial &amp; Big Data</h4>
+            <p>Pengolahan data spasial via QGIS &amp; Google Earth Engine, spatial clustering, serta fundamental
+              ekosistem Hadoop &amp; PySpark.</p>
+          </div>
+
+          <div class="pillar-card glass-panel reveal">
+            <div class="pillar-icon-box">💡</div>
+            <h4>EdTech &amp; Literasi Digital</h4>
+            <p>Perancangan asesmen digital terstandar, validitas butir soal, analitik numerasi-literasi, dan pembuatan
+              infografis edukatif.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS & TECH STACK SECTION -->
+    <section class="section" id="skills">
+      <div class="section-header reveal">
+        <div class="section-tag">SKILLS &amp; ARSENAL</div>
+        <h2 class="section-title">Keahlian &amp; Perangkat Teknologi</h2>
+        <p class="section-subtitle">Kombinasi komputasi kuantitatif, analisis spasial, serta platform tata kelola data
+          terpadu.</p>
+      </div>
+
+      <!-- Skills Category Tabs -->
+      <div class="category-tabs reveal" data-filter-group="skill">
+        <button class="cat-btn active" data-filter="all">Semua Keahlian</button>
+        <button class="cat-btn" data-filter="data-science">Data Science &amp; AI</button>
+        <button class="cat-btn" data-filter="spatial">Geospasial &amp; Big Data</button>
+        <button class="cat-btn" data-filter="edtech">Tata Kelola &amp; EdTech</button>
+        <button class="cat-btn" data-filter="analytics">Visualisasi &amp; Analisis</button>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Card 1: Data Science & Programming -->
+        <div class="skill-card glass-panel reveal" data-category="data-science">
+          <div class="skill-head">
+            <div class="skill-icon-wrap">🐍</div>
+            <div>
+              <h3>Data Science &amp; Pemrograman</h3>
+              <small>Statistika Komputasional &amp; Prediksi</small>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-pill">Python</span>
+            <span class="skill-pill">R Language</span>
+            <span class="skill-pill">Time Series (EGARCH)</span>
+            <span class="skill-pill">Scikit-learn</span>
+            <span class="skill-pill">Pandas &amp; NumPy</span>
+            <span class="skill-pill">Inferensi Statistik</span>
+            <span class="skill-pill">Data Cleansing</span>
+            <span class="skill-pill">Predictive Modeling</span>
+          </div>
+        </div>
+
+        <!-- Card 2: Spasial & Big Data -->
+        <div class="skill-card glass-panel reveal" data-category="spatial">
+          <div class="skill-head">
+            <div class="skill-icon-wrap">🌐</div>
+            <div>
+              <h3>Geospasial &amp; Big Data</h3>
+              <small>Pemetaan Spasial &amp; Skala Besar</small>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-pill">QGIS</span>
+            <span class="skill-pill">Google Earth Engine (GEE)</span>
+            <span class="skill-pill">Apache Hadoop</span>
+            <span class="skill-pill">PySpark</span>
+            <span class="skill-pill">Hive</span>
+            <span class="skill-pill">Spatial Clustering</span>
+            <span class="skill-pill">Remote Sensing Basics</span>
+          </div>
+        </div>
+
+        <!-- Card 3: EdTech & Governance -->
+        <div class="skill-card glass-panel reveal" data-category="edtech">
+          <div class="skill-head">
+            <div class="skill-icon-wrap">🏫</div>
+            <div>
+              <h3>Sistem Informasi Pendidikan</h3>
+              <small>Governance &amp; Kepatuhan Regulasi</small>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-pill">Dapodikdasmen</span>
+            <span class="skill-pill">ARKAS (BOS/BOSP)</span>
+            <span class="skill-pill">SPMI Kemendikbud</span>
+            <span class="skill-pill">Sistem Asesmen Digital</span>
+            <span class="skill-pill">Validasi Butir Soal</span>
+            <span class="skill-pill">Audit Data Sarpras</span>
+            <span class="skill-pill">Pelaporan Akuntansi Sekolah</span>
+          </div>
+        </div>
+
+        <!-- Card 4: Visualization & Analysis Tools -->
+        <div class="skill-card glass-panel reveal" data-category="analytics">
+          <div class="skill-head">
+            <div class="skill-icon-wrap">📊</div>
+            <div>
+              <h3>Visualisasi &amp; Perangkat Analisis</h3>
+              <small>Storytelling &amp; Business Intelligence</small>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-pill">Microsoft Excel (Advanced)</span>
+            <span class="skill-pill">ggplot2</span>
+            <span class="skill-pill">Seaborn / Matplotlib</span>
+            <span class="skill-pill">Streamlit</span>
+            <span class="skill-pill">Infografis Data</span>
+            <span class="skill-pill">Git &amp; GitHub</span>
+            <span class="skill-pill">Statistical Reporting</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section class="section" id="experience">
+      <div class="section-header reveal">
+        <div class="section-tag">CAREER JOURNEY</div>
+        <h2 class="section-title">Pengalaman Profesional</h2>
+        <p class="section-subtitle">Rekam jejak implementasi data di sektor pendidikan, statistik nasional, dan
+          akademisi.</p>
+      </div>
+
+      <div class="timeline-container">
+        <!-- Item 1: Current -->
+        <div class="timeline-item reveal active-role">
+          <div class="timeline-marker">
+            <span class="marker-pulse"></span>
+          </div>
+          <div class="timeline-card glass-panel">
+            <div class="timeline-badge-wrap">
+              <span class="time-badge">Agustus 2025 – Sekarang</span>
+              <span class="status-badge active">● Peran Aktif</span>
+            </div>
+            <h3 class="role-title">Operator Data Sekolah (Dapodik &amp; ARKAS) &amp; Pendidik</h3>
+            <h4 class="company-name">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 21h18M3 7v14M21 7v14M6 7V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v3M9 11h6M9 15h6" />
+              </svg>
+              SMP IT Zafira Qudsia · Lampung Selatan
+            </h4>
+            <ul class="role-desc">
+              <li>Bertanggung jawab penuh atas keakuratan dan sinkronisasi basis data nasional <strong>Dapodik
+                  Kemendikdasmen</strong> untuk data siswa, tenaga pendidik, dan sarana prasarana.</li>
+              <li>Mengelola penyusunan anggaran, belanja modal, dan pelaporan pertanggungjawaban dana bantuan
+                operasional melalui aplikasi <strong>ARKAS</strong> secara akuntabel.</li>
+              <li>Menyajikan ringkasan analitis dan proyeksi statistik performa akademik berkala kepada kepala sekolah
+                dan yayasan untuk evaluasi kebijakan.</li>
+            </ul>
+            <div class="role-tags">
+              <span>Dapodik</span><span>ARKAS</span><span>Data Integrity</span><span>SPMI</span><span>Pelaporan
+                Keuangan</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card glass-panel">
+            <div class="timeline-badge-wrap">
+              <span class="time-badge">Juli 2024 – Agustus 2025</span>
+            </div>
+            <h3 class="role-title">Asisten Pengolah Data</h3>
+            <h4 class="company-name">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+              Badan Pusat Statistik (BPS) Kabupaten Lampung Timur
+            </h4>
+            <ul class="role-desc">
+              <li>Melakukan pembersihan, validasi, dan pengolahan data agregat survei lintas sektor untuk penerbitan
+                buku resmi <strong>“Kabupaten Lampung Timur dalam Angka 2024”</strong>.</li>
+              <li>Merancang 3 karya infografis strategis dalam program nasional <strong>Desa Cantik (Desa Cinta
+                  Statistik)</strong> guna mempermudah aparatur desa memahami data demografi dan potensi lokal.</li>
+              <li>Mengembangkan prototipe logika deteksi anomali/kecurangan (fraud detection) untuk menyaring 10.000+
+                kuesioner survei lapangan secara otomatis.</li>
+            </ul>
+            <div class="role-tags">
+              <span>BPS Official</span><span>Data Cleaning</span><span>10K+
+                Records</span><span>Infografis</span><span>Fraud Detection</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card glass-panel">
+            <div class="timeline-badge-wrap">
+              <span class="time-badge">Februari 2025 – Juni 2025</span>
+            </div>
+            <h3 class="role-title">Asisten Dosen – Analisis Data Spasial &amp; Big Data</h3>
+            <h4 class="company-name">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+              Institut Teknologi Sumatera (ITERA) · Program Studi Sains Data
+            </h4>
+            <ul class="role-desc">
+              <li>Memimpin modul praktikum laboratorium dan membimbing 20+ mahasiswa semester 5 dalam pemodelan data
+                geospasial menggunakan <strong>QGIS</strong> dan <strong>Google Earth Engine</strong>.</li>
+              <li>Memberikan asistensi regresi spasial, spatial autocorrelation (Moran's I), dan visualisasi peta
+                interaktif dengan R dan Python.</li>
+              <li>Mengenalkan arsitektur komputasi terdistribusi Big Data melalui ekosistem <strong>Apache Hadoop,
+                  Apache Hive, dan PySpark</strong>.</li>
+            </ul>
+            <div class="role-tags">
+              <span>QGIS</span><span>GEE</span><span>PySpark</span><span>Hadoop</span><span>Spatial Regression</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION (Projects, Certificates, Awards - SAMA SEPERTI EKAWAHYU) -->
+    <section class="section" id="portfolio">
+      <div class="section-header reveal">
+        <div class="section-tag">PORTFOLIO DIRECTORY</div>
+        <h2 class="section-title">Karya, Sertifikasi &amp; Prestasi</h2>
+        <p class="section-subtitle">Eksplorasi kumpulan proyek pilihan, pengakuan akademik, dan sertifikat kompetensi
+          profesional.</p>
+      </div>
+
+      <!-- Main Directory Navigation Tabs (Projects, Certificates, Awards) -->
+      <div class="portfolio-main-tabs reveal" id="portfolio-main-tabs">
+        <button class="port-tab active" data-tab="projects">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+            <line x1="8" y1="21" x2="16" y2="21"></line>
+            <line x1="12" y1="17" x2="12" y2="21"></line>
+          </svg>
+          <span>Explore All Projects</span>
+          <span class="counter-badge">5</span>
+        </button>
+        <button class="port-tab" data-tab="certificates">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="8" r="7"></circle>
+            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+          </svg>
+          <span>Explore All Certificates</span>
+          <span class="counter-badge">4</span>
+        </button>
+        <button class="port-tab" data-tab="awards">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon
+              points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+            </polygon>
+          </svg>
+          <span>Explore All Awards</span>
+          <span class="counter-badge">3</span>
+        </button>
+      </div>
+
+      <!-- TAB 1: PROJECTS -->
+      <div class="tab-content active" id="tab-projects">
+        <!-- Project Sub-Filters -->
+        <div class="sub-filter-bar reveal">
+          <button class="sub-btn active" data-proj-filter="all">Semua Proyek</button>
+          <button class="sub-btn" data-proj-filter="ds">Data Science &amp; ML</button>
+          <button class="sub-btn" data-proj-filter="viz">Visualisasi &amp; Publikasi</button>
+          <button class="sub-btn" data-proj-filter="research">Riset &amp; Skripsi</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: HiVMate (Featured / Award Winning) -->
+          <article class="project-card glass-panel reveal" data-category="ds research">
+            <div data-gallery="hivmate" class="project-banner bg-hivmate-card">
+              <div class="banner-badge gold">🏆 Juara 1 Presentasi SAINTEK 2024</div>
+              <img src="assets/images/hivmate-logo.png" alt="HiVMate Logo" class="project-banner-logo">
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="meta-tag">Seminar Nasional SAINTEK III</span>
+                <span class="meta-year">2024</span>
+              </div>
+              <h3 class="project-title">HiVMate: Ekosistem Digital Pendukung Kesehatan</h3>
+              <p class="project-desc">
+                Inovasi aplikasi dan pemodelan prediktif pendukung kepatuhan pasien terapi antiretroviral yang
+                dipresentasikan dan meraih Juara 1 Best Presenter di ajang seminar nasional sains dan teknologi.
+              </p>
+              <div class="project-stack">
+                <span>Python</span><span>Streamlit</span><span>Predictive Analytics</span><span>Healthcare Data</span>
+              </div>
+              <div class="project-footer">
+                <button class="btn-detail" data-open-modal="hivmate">
+                  <span>Lihat Detail</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </button>
+                <a href="https://hivmateteam19.streamlit.app/" target="_blank" rel="noopener" class="btn-live-link"
+                  title="Buka Live Demo Streamlit">
+                  <span>Live App</span>
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Skripsi EGARCH BBRI -->
+          <article class="project-card glass-panel reveal" data-category="ds research">
+            <div data-gallery="egarch" class="project-banner bg-egarch-card">
+              <div class="banner-badge purple">🎓 Karya Skripsi S.Si.</div>
+              <img src="assets/images/egarch-plot.png" alt="Plot Volatilitas Return Saham BBRI"
+                class="project-banner-plot">
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="meta-tag">Ekonometrika Finansial</span>
+                <span class="meta-year">2026</span>
+              </div>
+              <h3 class="project-title">Analisis Volatilitas Return Saham BBRI dengan Model EGARCH</h3>
+              <p class="project-desc">
+                Pemodelan deret waktu ekonometrika untuk menganalisis efek leverage (asimetri berita buruk vs berita
+                baik) dan mengukur persistensi volatilitas saham perbankan terbesar di Indonesia.
+              </p>
+              <div class="project-stack">
+                <span>R Language</span><span>rugarch</span><span>Time Series</span><span>Leverage Effect</span>
+              </div>
+              <div class="project-footer">
+                <button class="btn-detail" data-open-modal="egarch">
+                  <span>Lihat Detail Lengkap</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Publikasi BPS -->
+          <article class="project-card glass-panel reveal" data-category="viz">
+            <div data-gallery="bps" class="project-banner bg-gradient-blue">
+              <div class="banner-badge blue">🏛️ Publikasi Resmi BPS</div>
+              <div class="banner-icon">📑</div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="meta-tag">Publikasi Kompendium</span>
+                <span class="meta-year">2024</span>
+              </div>
+              <h3 class="project-title">Kabupaten Lampung Timur dalam Angka 2024</h3>
+              <p class="project-desc">
+                Kompilasi dan kurasi data statistik resmi Badan Pusat Statistik yang merangkum indikator demografi,
+                ketenagakerjaan, pertanian, dan ekonomi makro di 24 kecamatan.
+              </p>
+              <div class="project-stack">
+                <span>MS Excel</span><span>Audit Kualitas Data</span><span>BPS Standard</span><span>Kompilasi
+                  Sektoral</span>
+              </div>
+              <div class="project-footer">
+                <button class="btn-detail" data-open-modal="bps">
+                  <span>Lihat Detail Lengkap</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Fraud Detection -->
+          <article class="project-card glass-panel reveal" data-category="ds">
+            <div data-gallery="fraud" class="project-banner bg-gradient-emerald">
+              <div class="banner-badge emerald">🤖 Machine Learning</div>
+              <div class="banner-icon">🛡️</div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="meta-tag">Deteksi Anomali</span>
+                <span class="meta-year">2024</span>
+              </div>
+              <h3 class="project-title">Sistem Deteksi Kecurangan (Fraud Detection) Survei</h3>
+              <p class="project-desc">
+                Pengembangan prototipe algoritma unsupervised anomaly detection untuk mengidentifikasi pola pengisian
+                kuesioner yang tidak lazim atau fabricated data pada survei lapangan.
+              </p>
+              <div class="project-stack">
+                <span>Python</span><span>Isolation Forest</span><span>Z-Score</span><span>Scikit-learn</span>
+              </div>
+              <div class="project-footer">
+                <button class="btn-detail" data-open-modal="fraud">
+                  <span>Lihat Detail Lengkap</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: Infografis Desa Cantik -->
+          <article class="project-card glass-panel reveal" data-category="viz">
+            <div data-gallery="desa" class="project-banner bg-desa-card">
+              <div class="banner-badge pink">📊 Literasi Data Desa</div>
+              <img src="assets/images/desa-cantik.jpg" alt="Infografis Desa Cantik" class="project-banner-plot">
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="meta-tag">Data Storytelling</span>
+                <span class="meta-year">2024</span>
+              </div>
+              <h3 class="project-title">Infografis Visualisasi Program Desa Cantik</h3>
+              <p class="project-desc">
+                Tiga seri infografis komunikatif yang mentransformasi data statistik administrasi desa menjadi wawasan
+                visual yang mudah dipahami bagi aparatur desa dan masyarakat umum.
+              </p>
+              <div class="project-stack">
+                <span>Desain Informasi</span><span>Visual Analytics</span><span>Data Storytelling</span>
+              </div>
+              <div class="project-footer">
+                <button class="btn-detail" data-open-modal="desa">
+                  <span>Lihat Detail Lengkap</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- TAB 2: CERTIFICATES -->
+      <div class="tab-content" id="tab-certificates">
+        <div class="certs-grid">
+          <div class="cert-card glass-panel reveal" data-gallery="cert-bpmp">
+            <div class="cert-icon-badge">📜</div>
+            <div class="cert-content">
+              <div class="cert-issuer">Balai Penjaminan Mutu Pendidikan (BPMP) Prov. Lampung</div>
+              <h3 class="cert-title">Bimtek SPMI, Literasi &amp; Numerasi, dan Digitalisasi Pembelajaran</h3>
+              <p class="cert-desc">Bimbingan teknis peningkatan mutu pendidikan terstandar nasional, integrasi digital
+                dalam pembelajaran, dan instrumen asesmen literasi-numerasi.</p>
+              <div class="cert-meta">
+                <span>Tahun: 2025</span>
+                <span class="cert-verified">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                  </svg>
+                  Terverifikasi
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="cert-card glass-panel reveal" data-gallery="cert-soal">
+            <div class="cert-icon-badge">🧪</div>
+            <div class="cert-content">
+              <div class="cert-issuer">Dinas Pendidikan / Musyawarah Guru Lampung Selatan</div>
+              <h3 class="cert-title">Pelatihan Pengembangan &amp; Analisis Butir Soal Ujian</h3>
+              <p class="cert-desc">Pelatihan penyusunan butir soal evaluasi terstandar berbasis Taksonomi Bloom,
+                validitas pengecoh (distractor), dan tingkat kesukaran soal.</p>
+              <div class="cert-meta">
+                <span>Tahun: 2025</span>
+                <span class="cert-verified">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                  </svg>
+                  Terverifikasi
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="cert-card glass-panel reveal" data-gallery="cert-itera">
+            <div class="cert-icon-badge">🎓</div>
+            <div class="cert-content">
+              <div class="cert-issuer">Institut Teknologi Sumatera (ITERA)</div>
+              <h3 class="cert-title">Sertifikat Asisten Dosen Analisis Data Spasial &amp; Big Data</h3>
+              <p class="cert-desc">Penghargaan atas pengajaran dan pembimbingan praktikum perangkat lunak QGIS, Google
+                Earth Engine, serta ekosistem Hadoop &amp; Spark bagi mahasiswa Sains Data.</p>
+              <div class="cert-meta">
+                <span>Semester Genap 2024/2025</span>
+                <span class="cert-verified">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                  </svg>
+                  Resmi Fakultas
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="cert-card glass-panel reveal" data-gallery="cert-bps">
+            <div class="cert-icon-badge">🏛️</div>
+            <div class="cert-content">
+              <div class="cert-issuer">Badan Pusat Statistik (BPS) Lampung Timur</div>
+              <h3 class="cert-title">Sertifikat Kontribusi Tim Pengolah Data &amp; Publikasi Sektoral</h3>
+              <p class="cert-desc">Apresiasi resmi atas pengolahan data survei statistik daerah, pembersihan data
+                mentah, dan pembuatan materi infografis program Desa Cantik.</p>
+              <div class="cert-meta">
+                <span>Tahun: 2024</span>
+                <span class="cert-verified">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                  </svg>
+                  Instansi Pemerintah
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 3: AWARDS -->
+      <div class="tab-content" id="tab-awards">
+        <div class="awards-grid">
+          <div class="award-card glass-panel reveal featured-award">
+            <div class="award-trophy">🥇</div>
+            <div class="award-content">
+              <div class="award-badge">PENGHARGAAN TERTINGGI</div>
+              <h3 class="award-title">Juara 1 – Presentasi Terbaik SAINTEK 2024</h3>
+              <div class="award-org">Seminar Nasional Sains &amp; Teknologi (SAINTEK) Series III · ITERA</div>
+              <p class="award-desc">Meraih Juara 1 Best Presenter atas pemaparan karya inovasi "HiVMate: Ekosistem
+                Dukungan Kesehatan Berbasis Prediksi" yang dinilai unggul dari segi kebaruan metodologi, ketepatan
+                analisis data, dan penyampaian ilmiah.</p>
+              <div class="award-year">Tahun 2024</div>
+            </div>
+          </div>
+
+          <div class="award-card glass-panel reveal">
+            <div class="award-trophy">🎓</div>
+            <div class="award-content">
+              <div class="award-badge">PRESTASI AKADEMIK</div>
+              <h3 class="award-title">Sarjana Sains Data dengan Predikat Sangat Memuaskan</h3>
+              <div class="award-org">Institut Teknologi Sumatera (ITERA)</div>
+              <p class="award-desc">Menyelesaikan studi S1 Sains Data dengan Indeks Prestasi Kumulatif 3,24 / 4,00,
+                menuntaskan skripsi pemodelan deret waktu finansial EGARCH, serta aktif sebagai asisten laboratorium dan
+                organisasi himpunan mahasiswa (HMSD ITERA).</p>
+              <div class="award-year">Wisuda 2026</div>
+            </div>
+          </div>
+
+          <div class="award-card glass-panel reveal">
+            <div class="award-trophy">🏅</div>
+            <div class="award-content">
+              <div class="award-badge">KONTRIBUSI PUBLIK</div>
+              <h3 class="award-title">Apresiasi Program Desa Cinta Statistik (Desa Cantik)</h3>
+              <div class="award-org">BPS Kabupaten Lampung Timur</div>
+              <p class="award-desc">Penghargaan atas dedikasi dalam mendesain media literasi data visual dan mendampingi
+                perangkat desa dalam memahami tata kelola statistik dasar untuk kemajuan desa.</p>
+              <div class="award-year">Tahun 2024</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section class="section" id="education">
+      <div class="section-header reveal">
+        <div class="section-tag">ACADEMIC BACKGROUND</div>
+        <h2 class="section-title">Pendidikan &amp; Organisasi</h2>
+        <p class="section-subtitle">Fondasi keilmuan kuantitatif dan kepemimpinan yang membentuk cara pandang analitis.
+        </p>
+      </div>
+
+      <div class="edu-grid">
+        <div class="edu-card glass-panel reveal">
+          <div class="edu-header">
+            <div class="edu-icon">🎓</div>
+            <div>
+              <span class="edu-time">2021 – 2026</span>
+              <h3>Institut Teknologi Sumatera (ITERA)</h3>
+              <div class="edu-major">S1 Sains Data (S.Si.) · IPK 3.24 / 4.00</div>
+            </div>
+          </div>
+          <p class="edu-desc">Kurikulum komprehensif yang memadukan matematika terapan, statistika matematis,
+            pemrograman, ekonometrika, dan komputasi cerdas.</p>
+          <div class="edu-coursework">
+            <strong>Mata Kuliah Utama:</strong>
+            <div class="course-chips">
+              <span>Analisis Deret Waktu</span><span>Analisis Data Spasial</span><span>Big Data Platform</span>
+              <span>Machine Learning</span><span>Deep Learning</span><span>Data Mining</span><span>Statistika
+                Nonparametrik</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="edu-card glass-panel reveal">
+          <div class="edu-header">
+            <div class="edu-icon">👥</div>
+            <div>
+              <span class="edu-time">2024 – 2025</span>
+              <h3>Himpunan Mahasiswa Sains Data (HMSD ITERA)</h3>
+              <div class="edu-major">Anggota Aktif Divisi Akademik &amp; Kemahasiswaan</div>
+            </div>
+          </div>
+          <p class="edu-desc">Berperan aktif dalam penyelenggaraan lokakarya komputasi sains data, seminar akademik,
+            serta memfasilitasi program bimbingan belajar sebaya bagi mahasiswa baru.</p>
+          <div class="edu-coursework">
+            <strong>Fokus Kegiatan:</strong>
+            <div class="course-chips">
+              <span>Event Management</span><span>Peer Tutoring</span><span>Workshop Data Science</span><span>Public
+                Relations</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section" id="contact">
+      <div class="section-header reveal">
+        <div class="section-tag">GET IN TOUCH</div>
+        <h2 class="section-title">Mari Terhubung &amp; Berkolaborasi</h2>
+        <p class="section-subtitle">Terbuka untuk posisi Data Analyst, Data Scientist, Konsultan Tata Kelola EdTech,
+          atau proyek riset.</p>
+      </div>
+
+      <div class="contact-container">
+        <!-- Contact Information Card -->
+        <div class="contact-info-card glass-panel reveal">
+          <div class="contact-card-header">
+            <h3>Informasi Kontak</h3>
+            <p>Silakan hubungi saya melalui jalur komunikasi berikut atau kirimkan pesan langsung melalui formulir.</p>
+          </div>
+
+          <div class="contact-methods">
+            <div class="contact-method-item">
+              <div class="method-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="method-details">
+                <span class="method-label">Email Utama</span>
+                <span class="method-value" id="email-text">a.rafiparinggomiwari@gmail.com</span>
+              </div>
+              <button class="copy-btn" id="copy-email-btn" title="Salin Email">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                <span>Salin</span>
+              </button>
+            </div>
+
+            <a href="https://linkedin.com/in/a-rafi-paringgom-iwari-767a16449" target="_blank" rel="noopener"
+              class="contact-method-item link-item">
+              <div class="method-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9h2.78v8.37H6.46v-8.37M7.85 6.6a1.62 1.62 0 1 0 0 3.24 1.62 1.62 0 0 0 0-3.24z" />
+                </svg>
+              </div>
+              <div class="method-details">
+                <span class="method-label">LinkedIn</span>
+                <span class="method-value">linkedin.com/in/a-rafi-paringgom-iwari</span>
+              </div>
+              <span class="arrow-ext">↗</span>
+            </a>
+
+            <div class="contact-method-item">
+              <div class="method-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="method-details">
+                <span class="method-label">Domisili</span>
+                <span class="method-value">Lampung Selatan &amp; Bandar Lampung, Indonesia</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="availability-card">
+            <span class="status-indicator"></span>
+            <div>
+              <strong>Status Ketersediaan:</strong>
+              <p>Terbuka untuk pekerjaan Full-time, Kontrak Proyek, Konsultasi Data, &amp; Kolaborasi Riset.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-card glass-panel reveal">
+          <form id="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="form-name">Nama Lengkap</label>
+                <input type="text" id="form-name" name="name" placeholder="cth. John Doe" required>
+              </div>
+              <div class="form-group">
+                <label for="form-email">Alamat Email</label>
+                <input type="email" id="form-email" name="email" placeholder="cth. nama@email.com" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="form-subject">Subjek Pesan</label>
+              <input type="text" id="form-subject" name="subject" placeholder="cth. Peluang Kolaborasi Data Science"
+                required>
+            </div>
+
+            <div class="form-group">
+              <label for="form-message">Isi Pesan</label>
+              <textarea id="form-message" name="message" rows="5"
+                placeholder="Tuliskan detail pesan atau pertanyaan Anda di sini..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary btn-submit">
+              <span>Kirim Pesan Sekarang</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="brand-badge">RPI</span>
+          <div>
+            <h4>A Rafi Paringgom Iwari, S.Si.</h4>
+            <p>Data Scientist · Statistical Modeler · EdTech Specialist</p>
+          </div>
+        </div>
+        <div class="footer-nav">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="current-year"></span> A Rafi Paringgom Iwari. All rights reserved.</p>
+        <a href="#home" class="back-to-top" id="back-to-top">
+          <span>Back to Top</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- DETAIL MODAL -->
+  <div class="modal-overlay" id="detail-modal">
+    <div class="modal-card glass-panel" id="modal-card">
+      <button class="modal-close-btn" id="modal-close" aria-label="Tutup Dialog">×</button>
+      <div class="modal-header">
+        <div class="modal-tag" id="modal-tag">KATEGORI</div>
+        <h3 class="modal-title" id="modal-title">Judul Proyek</h3>
+      </div>
+      <div class="modal-body" id="modal-body">
+        <!-- Content inserted dynamically -->
+      </div>
+      <div class="modal-footer">
+        <button class="btn-secondary" id="modal-dismiss-btn">Tutup</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div class="toast-notification" id="toast-notification">
+    <span class="toast-icon">✓</span>
+    <span class="toast-msg" id="toast-msg">Email berhasil disalin!</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
